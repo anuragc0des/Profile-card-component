@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@700&family=Inter:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Montserrat:wght@400;700&family=Outfit:wght@400;700&family=Overpass:wght@700&family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Kumbh Sans";
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 48vw bottom 40vh, left 45vw top 44vh;
+  background-color: hsl(185, 75%, 39%);
+}
+
+.container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+.container .img {
+  background: url(./images/bg-pattern-card.svg);
+  height: 115px;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.container .img img {
+  /* position: absolute; */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  /* transform: translate(-50%, 110%); */
+  margin: -50px auto -150px auto;
+  overflow: hidden;
+}
+
+.container .info-text {
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.container .info-text p {
+  color: hsl(0, 0%, 59%);
+  font-size: 18px;
+}
+
+.container .info-text .small-font {
+  font-size: 16px;
+}
+
+.container .info-text p span {
+  color: hsl(229, 23%, 23%);
+  font-weight: 700;
+}
+
+.container hr {
+  margin: 20px 0px 20px;
+}
+
+.container .social-proof {
+  margin: 20px 30px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container .social-proof .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  text-align: center;
+}
+
+.container .social-proof .info p {
+  font-size: 14px;
+}
+
+.container .social-proof .info span {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.attribution {
+  margin-top: 40px;
+}
+
+.attribution a {
+  color: #fff;
+}
+
+@media (max-width: 520px) {
+  .container {
+    width: 330px;
+  }
+}
